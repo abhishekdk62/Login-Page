@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Glowy Menu</title>
+  </head>
+  <body
+    style="background-color: #1d1f28; margin: 0; font-family: Arial, sans-serif;"
+  >
+
+    <nav
+      style="background-color: #0b0e17; padding: 10px 0; text-align: center;"
+    >
+      <ul
+        style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;"
+      >
+        <li style="display: inline; font-size: 18px; font-weight: bold;">
+          <a
+            href="#"
+            style="text-decoration: none; color: #00bcd4; padding: 10px; border-radius: 5px; position: relative; transition: all 0.3s ease;"
+          >
+            Home
+            <span
+              style="position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background-color: #00bcd4; visibility: hidden;"
+            ></span>
+          </a>
+        </li>
+        <li style="display: inline; font-size: 18px; font-weight: bold;">
+          <a
+            href="#"
+            style="text-decoration: none; color: #00bcd4; padding: 10px; border-radius: 5px; position: relative; transition: all 0.3s ease;"
+          >
+            About
+            <span
+              style="position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background-color: #00bcd4; visibility: hidden;"
+            ></span>
+          </a>
+        </li>
+        <li style="display: inline; font-size: 18px; font-weight: bold;">
+          <a
+            href="#"
+            style="text-decoration: none; color: #00bcd4; padding: 10px; border-radius: 5px; position: relative; transition: all 0.3s ease;"
+          >
+            Services
+            <span
+              style="position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background-color: #00bcd4; visibility: hidden;"
+            ></span>
+          </a>
+        </li>
+        <li style="display: inline; font-size: 18px; font-weight: bold;">
+          <a
+            href="#"
+            style="text-decoration: none; color: #00bcd4; padding: 10px; border-radius: 5px; position: relative; transition: all 0.3s ease;"
+          >
+            Contact
+            <span
+              style="position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background-color: #00bcd4; visibility: hidden;"
+            ></span>
+          </a>
+          <form action="/logout" method="POST">
+  <button type="submit">Logout</button>
+</form>
+
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="img"
+      style="height: 100vh; width:100vw;    background: url('https://images.pexels.com/photos/3262249/pexels-photo-3262249.jpeg?cs=srgb&dl=pexels-jplenio-3262249.jpg&fm=jpg') no-repeat;
+    background-size: cover;"
+    >
+    </div>
+    <script>
+      // Glowing effect on hover const menuItems =
+      document.querySelectorAll('nav a'); menuItems.forEach(item => {
+      item.addEventListener('mouseover', () => { item.style.textShadow = "0 0
+      10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4";
+      item.querySelector('span').style.visibility = 'visible'; });
+      item.addEventListener('mouseout', () => { item.style.textShadow = "none";
+      item.querySelector('span').style.visibility = 'hidden'; }); });
+    </script>
+
+  </body>
+</html>
